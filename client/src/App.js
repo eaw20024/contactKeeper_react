@@ -4,9 +4,11 @@ import Navbar from './component/layout/Navbar';
 import './App.css';
 import Home from './component/pages/Home'
 import About from './component/pages/About'
+import ContactState from './context/contact/ContactState'
 
 const App = () => {
   return (
+    <ContactState>
     <Router>
     <Fragment>
       <Navbar />
@@ -18,6 +20,7 @@ const App = () => {
       </div>
     </Fragment>
     </Router>
+    </ContactState>
   );
 }
 
