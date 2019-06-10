@@ -37,7 +37,8 @@ const ContactState = props => {
                 phone:'333-333-3333',
                 type:'personal'
             }
-        ]
+        ],
+        current: null
     };
 
     const [state, dispatch] = useReducer(contactReducer, initialState);
@@ -49,6 +50,9 @@ const ContactState = props => {
         dispatch({type: ADD_CONTACT, payload: contact})
     };
     // DeleteContact
+    const deleteContact = id => {
+        dispatch({type: DELETE_CONTACT, payload: id})
+    };
     // Set Current Contact
     // Clear Current Contact
     // Update Contact
@@ -59,7 +63,8 @@ const ContactState = props => {
         <ContactContext.Provider
         value={{
             contacts: state.contacts,
-            addContact
+            addContact,
+            deleteContact
         }}
         >
             
