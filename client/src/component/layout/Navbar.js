@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import React from '../../../node_modules/react';
+import PropTypes from '../../../node_modules/prop-types'
+import { Link } from '../../../node_modules/react-router-dom'
 
 const Navbar = ({ title, icon }) => {
     return (

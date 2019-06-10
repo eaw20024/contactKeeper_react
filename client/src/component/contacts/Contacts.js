@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from 'react'
+import React, { Fragment, useContext } from '../../../node_modules/react'
 import ContactContext from '../../context/contact/contactContext'
 import ContactItem from './ContactItem'
 
